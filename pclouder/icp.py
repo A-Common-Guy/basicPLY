@@ -42,23 +42,7 @@ class ICPRegistration:
                  loss_fn='none', loss_params=None, 
                  visualize=False, target_distance=None,
                  apply_mirroring=None, method='point_to_point'):
-        """
-        Run ICP registration.
-        
-        Args:
-            max_iterations: Maximum number of iterations
-            quality: Resolution quality: 'full', 'medium', or 'low'
-            loss_fn: Loss function: 'none', 'huber', 'tukey', 'percentile'
-            loss_params: Dictionary of loss function parameters
-            visualize: Whether to visualize registration progress
-            target_distance: Stop when mean distance falls below this
-            apply_mirroring: Optional mirroring to apply to source before ICP.
-                           Can be: 'X', 'Y', 'Z', 'XY', 'XZ', 'YZ', 'XYZ', or None
-            method: ICP method: 'point_to_point' (default) or 'point_to_plane'
-        
-        Returns:
-            Tuple of (transformation, mean_distances, intermediate_transforms)
-        """
+      
         # Start timing
         total_start = time.time()
         
